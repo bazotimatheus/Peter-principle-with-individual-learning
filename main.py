@@ -39,7 +39,7 @@ for output in range(MAX_EXECUTIONS):
 
     # calculate_competences(dataset, list_competences)
 
-    dataset = dismiss_employees(dataset)
+    dataset = layoff_employees(dataset)
     dataset = promote_employees(dataset, STRATEGY, max_competence, qualifications)
     dataset = age_employees(dataset)
     dataset = update_skill_vector(dataset, qualifications)
